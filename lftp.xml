@@ -38,12 +38,12 @@
     <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/lftp</HostDir>
-      <ContainerDir>/var/lftp</ContainerDir>
+      <ContainerDir>/etc/lftp</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/cache/Downloads</HostDir>
-      <ContainerDir>/var/downloads</ContainerDir>
+      <ContainerDir>/mnt/downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
