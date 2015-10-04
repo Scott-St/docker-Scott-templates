@@ -38,7 +38,7 @@
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/lftp</HostDir>
-      <ContainerDir>/mnt/appdata</ContainerDir>
+      <ContainerDir>/var/lftp</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
