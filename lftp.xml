@@ -34,6 +34,10 @@
       <Name>FTP_HOST</Name>
       <Value>host</Value>
     </Variable>
+    <Variable>
+      <Name>FTP_REMOTE_DIR</Name>
+      <Value>/</Value>
+    </Variable>
   </Environment>
     <Data>
     <Volume>
