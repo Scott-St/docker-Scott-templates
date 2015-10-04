@@ -22,6 +22,18 @@
       <Name>FTP_PORT</Name>
       <Value>990</Value>
     </Variable>
+    <Variable>
+      <Name>FTP_USER</Name>
+      <Value>username</Value>
+    </Variable>
+    <Variable>
+      <Name>FTP_PASSWORD</Name>
+      <Value>password</Value>
+    </Variable>
+    <Variable>
+      <Name>FTP_HOST</Name>
+      <Value>host</Value>
+    </Variable>
   </Environment>
   <Data>
     <Volume>
