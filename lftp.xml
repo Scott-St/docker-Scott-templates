@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Beta>False</Beta>
+  <Beta>True</Beta>
 <Category>FTP:</Category>
-  <Name>lftp</Name>
+  <Name>lftp Seedbox Sync</Name>
   <Overview>
-   lftp
+   lftp Seedbox Sync Docker
   </Overview>
   <Description>
   </Description>
@@ -16,24 +16,22 @@
   <Privileged>false</Privileged>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>5555</HostPort>
-        <ContainerPort>5555</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
   </Networking>
   <Environment>
     <Variable>
-      <Name>DEFAULT_PORT</Name>
+      <Name>FTP_PORT</Name>
       <Value>990</Value>
     </Variable>
   </Environment>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/lftp</HostDir>
-      <ContainerDir>/</ContainerDir>
+      <HostDir>/mnt/cache/appdata/lftp</HostDir>
+      <ContainerDir>/mnt/appdata</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/Downloads</HostDir>
+      <ContainerDir>/mnt/Downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
