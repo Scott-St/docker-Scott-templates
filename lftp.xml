@@ -43,7 +43,7 @@
     </Volume>
     <Volume>
       <HostDir>/mnt/cache/Downloads</HostDir>
-      <ContainerDir>/mnt/Downloads</ContainerDir>
+      <ContainerDir>/var/downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
