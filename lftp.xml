@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+<Category>FTP:</Category>
+  <Name>lftp</Name>
+  <Overview>
+   lftp
+  </Overview>
+  <Description>
+  </Description>
+  <Registry>https://hub.docker.com/r/scottst/lftp/</Registry>
+  <GitHub>https://github.com/ZPI-Scott/lftp</GitHub>
+  <Support>http://lime-technology.com/forum/</Support>
+  <Repository>scottst/lftp</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5555</HostPort>
+        <ContainerPort>5555</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>DEFAULT_PORT</Name>
+      <Value>990</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/lftp</HostDir>
+      <ContainerDir>/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Icon>http://windows7vswindows8.com/wp-content/uploads/2011/12/ftp_icon.png</Icon>
+</Container>
