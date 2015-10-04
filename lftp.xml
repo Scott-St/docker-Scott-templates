@@ -35,5 +35,17 @@
       <Value>host</Value>
     </Variable>
   </Environment>
+    <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/lftp</HostDir>
+      <ContainerDir>/var/lftp</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/Downloads</HostDir>
+      <ContainerDir>/var/downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   <Icon>http://windows7vswindows8.com/wp-content/uploads/2011/12/ftp_icon.png</Icon>
 </Container>
