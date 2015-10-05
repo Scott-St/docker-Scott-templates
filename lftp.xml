@@ -38,6 +38,10 @@
       <Name>FTP_REMOTE_DIR</Name>
       <Value>/</Value>
     </Variable>
+    <Variable>
+      <Name>FTP_CRON_JOB</Name>
+      <Value></Value>
+    </Variable>
   </Environment>
     <Data>
     <Volume>
@@ -51,5 +55,5 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Icon>http://windows7vswindows8.com/wp-content/uploads/2011/12/ftp_icon.png</Icon>
+  <Icon>http://i.imgur.com/Q2IBFZ7.png?1</Icon>
 </Container>
