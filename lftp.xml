@@ -40,7 +40,7 @@
     </Variable>
     <Variable>
       <Name>FTP_CRON_JOB</Name>
-      <Value></Value>
+      <Value>0 1 * * *</Value>
     </Variable>
   </Environment>
     <Data>
