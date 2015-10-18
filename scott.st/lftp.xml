@@ -49,7 +49,7 @@
     </Variable>
     <Variable>
       <Name>FTP_REMOTE_DIR</Name>
-      <Value>/</Value>
+      <Value>/.</Value>
     </Variable>
     <Variable>
       <Name>FTP_CRON_JOB</Name>
