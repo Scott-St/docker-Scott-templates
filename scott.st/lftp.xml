@@ -11,7 +11,7 @@
     You can modify the FTP script in appdata/lftp for a custom mirror job.  This will not get overwritten when updating the docker.  To start with a fresh script delete it from the appdata directory and update the docker.  It will copy the default script again.[br][br]
     [b][span style='color: #E80000;']Directions: [/b][br]
     Set the following variables in the advanced view:[br][br]
-    [b]Required Environment Variables:[b][br]
+    [b]Required Environment Variables:[/b][br]
     [ul][li]FTP_USER[/li]
     [li]FTP_PASSWORD[/li]
     [li]FTP_HOST[br][/li][/ul]
