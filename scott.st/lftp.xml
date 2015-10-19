@@ -7,10 +7,10 @@
    lftp Seedbox Sync Docker
   </Overview>
   <Description>
-    This Docker will mirror from your seedbox to local unraid server. After mirroring is complete it will delete the source files and it will extract and *.RAR files in the folder root.[br][br]
-    You can modify the FTP script in appdata/lftp for a custom mirror job.[br][br]
+    This Docker will mirror from your seedbox to your local unraid server. After mirroring is complete it will delete the source files from the seedbox and it will extract the *.RAR files in the folder root.[br][br]
+    You can modify the FTP script in appdata/lftp for a custom mirror job.  This will not get overwritten when updating the docker.  To start with a fresh script delete it from the appdata directory and update the docker.  It will copy the default script again.[br][br]
     [b][span style='color: #E80000;']Directions: [/b][br]
-    Set the following variables in the advanced view:[br]
+    Set the following variables in the advanced view:[br][br]
     [b]Required Environment Variables:[b][br]
     [ul][li]FTP_USER[/li]
     [li]FTP_PASSWORD[/li]
@@ -18,7 +18,7 @@
     [b]Other Environment Variables:[/b][br]
     [ul][li]FTP_PORT (Default: 990)[/li]
     [li]FTP_REMOTE_DIR (Default: /.) Typical should be "/home/rtorrentuser/complete/." assuming you move the completed torrents to the complete directory.[/li]
-    [li]FTP_CRON_JOB (Default: 0 1 *) Specified the time of the download in Cron Syntax. Default is 1AM.[/li][ul]
+    [li]FTP_CRON_JOB (Default: "0 1 * * *") Specified the time of the download in Cron Syntax. Default is 1AM.[/li][ul]
   </Description>
   <Registry>https://hub.docker.com/r/scottst/lftp/</Registry>
   <GitHub>https://github.com/ZPI-Scott/lftp</GitHub>
